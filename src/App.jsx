@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Cart from "./pages/cart/Cart";
-import Shop from "./pages/shop/Shop";
 import { ShopContextProvider } from "./context/Shop-Context";
+import LinkRoutes from "./components/LinkRoutes";
 
 function App() {
   return (
@@ -12,10 +9,8 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/shopping-cart" element={<Shop />} />
-            <Route path="/shopping-cart/cart" element={<Cart />} />
-          </Routes>
+
+          <LinkRoutes />
         </Router>
       </ShopContextProvider>
     </div>
