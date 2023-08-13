@@ -1,7 +1,6 @@
 import p1 from "./assets/iph.png";
 import p2 from "./assets/hph.png";
 import p3 from "./assets/um.png";
-
 import p4 from "./assets/cap.png";
 import p5 from "./assets/bike.png";
 import p6 from "./assets/lap.png";
