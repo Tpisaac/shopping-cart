@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="links">
-        <Link to="/"> Shop </Link>
-        <Link to="/cart">
+        <Link to="/shopping-cart"> Shop </Link>
+        <Link to="/shopping-cart/cart">
           <ShoppingCart size={32} />
         </Link>
       </div>
